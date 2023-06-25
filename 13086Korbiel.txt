@@ -1,0 +1,68 @@
+1
+static void Even()
+        {
+            Random random = new Random();
+            int randomNumber = random.Next(0, 9);
+            if (randomNumber%2 == 0)
+            {
+                Console.WriteLine("Good");
+            } 
+            else
+            {
+                Console.WriteLine("Bad");
+            }
+        }
+2
+static int Product(int n)
+        {
+            int score = 1;
+
+            if (n <= 1)
+            {
+                return score;
+            }
+
+            else
+            {
+                for (int i = 1; i <= n; i++)
+                {
+                    score = score * i;
+                }
+            }
+            return score;
+        }
+3
+static double Sum2D(double[,] array)
+        {
+            double result = 0;
+            int length = array.GetLength(0);
+            int width = array.GetLength(1);
+
+            for (int i = 0; i < length; i++)
+            {
+                for (int j = 0; j < width; j++)
+                {
+                    result = result + array[i,j];
+                }
+            }
+            return result;
+        }
+4
+a
+class Square
+{
+
+public double Side 
+{get; set;}
+
+}
+c
+interface IFigure
+{
+public double Area();
+}
+5 B tablica
+6 A &&
+7 B
+8 C x=50
+9 B
